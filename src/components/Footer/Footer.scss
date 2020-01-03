@@ -1,0 +1,15 @@
+@import "../../index.scss";
+
+.footer {
+  color: $mainWhite;
+  text-align: center;
+  margin: 2em;
+
+  ul {
+    list-style-type: none;
+    font-weight: 600;
+  }
+  .ion-md-heart {
+    color: #ff5353;
+  }
+}

@@ -1,0 +1,97 @@
+@import "../../index.scss";
+
+.navbar {
+  background-color: $mainBlack;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: grid;
+  grid-template-columns: auto;
+}
+button {
+  font-family: "circular", sans-serif;
+  text-decoration: none;
+  color: $mainWhite;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: $mainBtn-color;
+  &:hover {
+    background-color: $btnHover-color;
+  }
+}
+.nav-links {
+  display: none;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  background-color: $mainBlack;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  overflow-x: hidden;
+}
+.close {
+  color: $mainWhite;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  &:hover {
+    color: $btnHover-color;
+  }
+}
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  li {
+    list-style: none;
+    text-align: center;
+    padding: 2rem;
+    a {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $mainWhite;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+  }
+  .nav-link {
+    color: $mainGray;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+    padding: 0 1rem;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  .active {
+    color: $hover-color;
+  }
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$mainBlack: #222;
+$hover-color: #e53935;
+$cardIcon-color: #e53935;
+$mainGray: #f5f5f5;
+$mainWhite: #fff;
+
+$darkBg-color: #444343;
+$darkCard-color: #4a4a4a;
+
+$underGray: #9b9b9b;
+
+$btnHover-color: #c92e2b;
+$mainBtn-color: #e53935;
+
+body {
+  background-color: $darkBg-color;
+  color: $mainWhite;
+  font-family: "open sans", sans-serif;
+}
