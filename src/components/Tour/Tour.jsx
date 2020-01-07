@@ -13,6 +13,7 @@ class Tour extends Component {
   };
   render() {
     const { id, beach, img, name, info } = this.props.toure;
+
     return (
       <article className="tour">
         <div className="img-container">

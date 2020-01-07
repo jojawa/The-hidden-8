@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+.searchBar {
+  background-color: $darkCard-color;
+  width: 80vw;
+  margin: 4% auto 0 auto;
+  height: 3.5rem;
+  border-radius: 0.8rem;
+  box-shadow: $bs;
+  line-height: 3.5rem;
+}
+input {
+  background: none;
+  border: none;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  color: $mainWhite;
+}
+input::placeholder {
+  color: $underGray;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
